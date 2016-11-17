@@ -1,14 +1,18 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{B359DB33-A204-9FCD-8562-72F07B726B2F}") = "EyeSpace", "Assembly-CSharp.csproj", "{4859AA96-DBA5-3506-345F-407508FA1D59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{4859AA96-DBA5-3506-345F-407508FA1D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4859AA96-DBA5-3506-345F-407508FA1D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4859AA96-DBA5-3506-345F-407508FA1D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4859AA96-DBA5-3506-345F-407508FA1D59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
