@@ -47,7 +47,66 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Constants.cs" />
+     <Compile Include="Assets\Scripts\GazePoint.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Calibration\CalibrationArea.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Calibration\CalibrationManager.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Calibration\CalibrationUI.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Calibration\EyeUI.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Calibration\ResizeToCanvas.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Collision\GazeRaycaster.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Collision\InitialCollisionCheck.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Collision\ReticleEyeTribe.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Collision\SelectionRadialEyeTribe.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Creators\CylindricCreator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Creators\SphericalCreator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Creators\SphericalCreatorInteraction.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\GazeGUIController.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\GazeInfoController.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\MainGUIButtonController.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\ProductInitializer.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\SplashImageFader.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\StateController.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\StateNotifyer.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\GUI\SwitchCanvasRenderMode.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Interaction\InteractiveColorInterpolator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Interaction\InteractiveInitialCollisionCheck.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Interaction\InteractiveScaleInterpolator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Interaction\InteractiveShakeAndFire.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Tags.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\AlignWithCameraY.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\CameraElevationController.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\CanvasGroupAlphaInterpolator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\ColorInterpolator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\DestroyInGazeMode.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\FaceCameraInterval.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\LevelManager.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\MoveInterpolator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\RotationInterpolator.cs" />
+     <Compile Include="Assets\TheEyeTribe\Scripts\Utils\UIMovementFixedDistance.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\ObjectPool.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\PlatformDependentText.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\Reticle.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\SelectionRadial.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\SelectionSlider.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\UIFader.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\UIMovement.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\UITint.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\VRCameraFade.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRSampleScenes\Scripts\Utils\VRCameraUI.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRStandardAssets\Scripts\VRDeviceManager.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRStandardAssets\Scripts\VREyeRaycaster.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRStandardAssets\Scripts\VRFPSCounter.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRStandardAssets\Scripts\VRInput.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
+     <Compile Include="Assets\TheEyeTribe\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+     <None Include="Assets\TheEyeTribe\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
+     <None Include="Assets\TheEyeTribe\Plugins\Android\Assets\OSIG_Readme.txt" />
+     <None Include="Assets\TheEyeTribe\VRSampleScenes\Shaders\UIOverlay.shader" />
+     <None Include="Assets\TheEyeTribe\VRSampleScenes\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\TheEyeTribe\VRSampleScenes\Shaders\SlidingUV.shader" />
+     <None Include="Assets\TheEyeTribe\VRSampleScenes\Shaders\SeparableAlpha.shader" />
+     <None Include="Assets\TheEyeTribe\VRSampleScenes\Fonts\LICENSE.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
@@ -56,6 +115,9 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="EyeTribe.Unity">
+ <HintPath>/Volumes/KEA/Unity projects/EyeSpace/Assets/TheEyeTribe/Plugins/EyeTribe.Unity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
